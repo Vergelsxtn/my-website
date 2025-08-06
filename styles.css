@@ -1,0 +1,211 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #8697C4;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    color: #244855;
+    padding: 1px;
+    text-align: center;
+}
+
+#home {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+
+#about, #projects, #contact {
+    margin: 20px 0;
+}
+
+.about {
+    color: #244855;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    
+.me-info {
+    display: flex;
+    gap: 1px;
+    text-align: left;
+    flex-wrap: wrap;
+    border: 5px solid #ccc;
+    padding: 10px;
+}
+
+.pic {
+    display: flex;
+    padding: 30px;
+    justify-content: right;
+    width: 400px;
+    height: 400px;
+    margin: 100px 50px;
+    flex-wrap: wrap;
+    
+}
+
+.pic img {
+    border-radius: 50%;
+    border: 5px solid #8697C4;
+}
+
+.description {
+    display: flex;
+    padding: 10px 100px;
+    background-image: linear-gradient(white, #d6e7bb);
+    justify-content: left;
+    width: 800px;
+    border: 5px solid #8697C4;
+    margin: 100px 50px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.role {
+    color: #3E8948;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(white, #d6e7bb);
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    color: #244855;
+    border: 5px solid #8697C4;
+    padding: 1px;
+    width: 800px;
+    background-image: linear-gradient(white, #d6e7bb);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered {
+    color: #244855;
+    font-family: cursive;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    font-family: arial;
+    font-size: 16px;
+    width: 30%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+form textarea {
+    font-family: arial;
+    width: 30%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+form button {
+    width: 10%;
+    margin-top: 5px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.animated-button {
+    background-color: #8697C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.animated-button:hover::before {
+    width: 120%;
+}
+
+.animated-button:hover {
+    background-color: #3E8948;
+    transform: translateY(-3px);
+}
+
+.animated-button:active {
+    transform: translateY(0);
+}
+
+.animated-button span {
+    position: relative;
+    z-index: 1;
+}
