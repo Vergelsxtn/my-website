@@ -1,4 +1,4 @@
-const texts = ["Welcome!", "Maligayang pagdating!", "いらっしゃいませ!", "hwan-yeong!", "स्वागत!"];
+const texts = ["G'day!", "Good to see you!", "Welcome!", "Howdy!", "Hello there!", "Greetings!"];
     let index = 0;
 
     function fadeInOutText() {
